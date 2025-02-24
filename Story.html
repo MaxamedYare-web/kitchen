@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Crispy Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <!-- header -->
+    <div class="header-nav">
+        <div class="menus-i">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="logo">
+            <span>Crispy Kitchen</span>
+        </div>
+        <div class="nav mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="home" href="./Story.html">Story</a></li>
+                <li><a href="./Menu.html">Menu</a></li>
+                <li><a href="./Our Updates.html">Our Updates</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header-btn">
+            <button>Reservation</button>
+        </div>
+    </div>
+    </section>
+    <section class="story">
+        <div class="container">
+            <div class="story-hero">
+                <h1>Kitchen's Story</h1>
+                <p>this is how our kitchen evolved in new digital era</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="stories">
+            <div class="story-title">
+                <h2>Crispy Kitchen is the latest Bootstrap 5 HTML template provided by Tooplate website.</h2>
+                <button class="btn">
+                    Check Out News
+                </button>
+                <button class="btn" id="btn-2">
+                    Say Hi
+                </button>
+            </div>
+
+            <div class="story-des">
+                <p>Since this website template is 100% free to use, you can edit and apply it for your commercial restaurant websites. There are 6 HTML pages included in this template. Please click "Reservation" button on the top right to see the pop-up reservation form.</p>
+                    
+                <p>You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please contact us for more information.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- team members -->
+    <section class="team-members">
+        <div class="container">
+            <h1>Team Members</h1>
+            <div class="team">
+                <div class="team-img">
+                    <img src="images/sophia.jpg" alt="sophia's picture">
+                    <h2>Sophia</h2>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-img">
+                    <img src="images/penjamin.jpg" alt="Benjamin's picture">
+                    <h2>Benjamin W.</h2>
+                    <p>Restaurant Manager</p>
+                </div>
+                    
+                <div class="team-img">
+                    <img src="images/muchen.jpg" alt="muchen's picture">
+                    <h2>Muchen Jack</h2>
+                    <p>Senior Chef</p>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- news latter -->
+     <section class="container">
+        <div class="news">
+            <div class="news-later">
+                <img src="images/newslatter.jpg" alt="News latter">
+            </div>
+            <div class="news-des">
+                <h2>Our Newsletter</h2>
+                <p>The food news every day</p>
+                <input type="email" placeholder="Enter Your Email"> <br>
+                <button class="news-btn"> Subscribe </button>
+                <p id="policy">By signing up, you agree to our Privacy Notice and the data policy</p>
+            </div>
+        </div>
+     </section>
+
+<!-- footer -->
+     
+<footer class="footer">
+    <div class="container">
+            <h2>Crispy Kitchen</h2>
+        <div class="footer-grid">
+            <div class="grid-footer">
+                <h2>Location</h2>
+                <p>121 Einstein Loop N, Bronx, NY 10475, United States</p>
+                <button class="footer-btn">Directions</button>
+            </div>
+            <div class="grid-footer">
+                <h2>Opening Hours</h2>
+                <p>Monday - Friday</p>
+                <p>10:00 AM - 08:00 PM</p>
+                <p>Tel: <span>010-02-0340</span></p>
+            </div>
+            <div class="grid-footer">
+                <h2>Social</h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <p>Copyright © 2022 Crispy Kitchen Co., Ltd.</p>
+                <p>Design: <span>Ibrahim_dev</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+      <!-- scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const barsIcon = document.querySelector('.fa-bars');
+        const closeIcon = document.querySelector('.fa-close');
+        const navMenu = document.querySelector('.nav.mobile');
+
+        barsIcon.addEventListener('click', function () {
+            navMenu.style.display = 'block';
+            barsIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', function () {
+            navMenu.style.display = 'none';
+            closeIcon.style.display = 'none';
+            barsIcon.style.display = 'block';
+        });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispy Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <!-- header -->
+   
+        <div class="header-nav">
+            <div class="menus-i">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-close"></i>
+            </div>
+            <div class="logo">
+                <span>Crispy Kitchen</span>
+            </div>
+            <div class="nav mobile">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./Story.html">Story</a></li>
+                    <li><a href="./Menu.html">Menu</a></li>
+                    <li><a id="home" href="./Our Updates.html">Our Updates</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="header-btn">
+                <button>Reservation</button>
+            </div>
+        </div>
+   
+    <!-- updates hero -->
+    <section class="update">
+        <div class="container">
+            <div class="update-hero">
+                <h1>News & Events</h1>
+                <p>our latest updates, news, events and special promotions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- latest updates -->
+    <section class="our-updates">
+        <div class="container">
+            <h1>Latest Updates</h1>
+            <div class="menus">
+                <div class="updates-menu">
+                    <img src="images/update-1.jpg" alt="sophia's picture">
+                    <div class="update-name">
+                        <button class="update-btn">featured</button>
+                        <h2>How to make a healthy diet</h2>
+                    </div>
+                </div>
+                <div class="updates-menu">
+                    <img src="images/update-2.jpg" alt="Benjamin's picture">
+                    <div class="update-name">
+                        <button class="update-btn">featured</button>
+                        <h2>Happy Living and Happy eating tips</h2>
+                    </div>
+                </div>
+               
+            </div>   
+        </div>
+    </section>
+
+    <!-- News & Events -->
+
+    <section class="news-event">
+        <div class="container">
+            <h1>News & Events</h1>
+            <div class="events">
+                <div class="event-img">
+                    <img src="images/update-3.jpg" alt="sophia's picture">
+                    <button>Promotions</button>
+                    <h3>12 April 2022</h3>
+                    <h2>Is Coconut good for your health?</h2>
+                </div>
+                <div class="event-img">
+                    <img src="images/update-4.jpg" alt="Benjamin's picture">
+                    <button>Career</button>
+                    <h3>18 April 2022</h3>
+                    <h2>How to run a sushi business?</h32>
+                </div>
+                    
+                <div class="event-img">
+                    <img src="images/update-5.jpg" alt="muchen's picture">
+                    <button>Meeting</button>
+                    <h3>20 April 2022</h3>
+                    <h2>Learning a fine dining experience</h2>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- footer -->
+     
+<footer class="footer">
+    <div class="container">
+            <h2>Crispy Kitchen</h2>
+        <div class="footer-grid">
+            <div class="grid-footer">
+                <h2>Location</h2>
+                <p>121 Einstein Loop N, Bronx, NY 10475, United States</p>
+                <button class="footer-btn">Directions</button>
+            </div>
+            <div class="grid-footer">
+                <h2>Opening Hours</h2>
+                <p>Monday - Friday</p>
+                <p>10:00 AM - 08:00 PM</p>
+                <p>Tel: <span>010-02-0340</span></p>
+            </div>
+            <div class="grid-footer">
+                <h2>Social</h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <p>Copyright © 2022 Crispy Kitchen Co., Ltd.</p>
+                <p>Design: <span>Ibrahim_dev</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+     <!-- scripts -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const barsIcon = document.querySelector('.fa-bars');
+        const closeIcon = document.querySelector('.fa-close');
+        const navMenu = document.querySelector('.nav.mobile');
+
+        barsIcon.addEventListener('click', function () {
+            navMenu.style.display = 'block';
+            barsIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+        });
+
+        closeIcon.addEventListener('click', function () {
+            navMenu.style.display = 'none';
+            closeIcon.style.display = 'none';
+            barsIcon.style.display = 'block';
+        });
+        });
+
+    </script>
+</body>
+</html>
