@@ -122,7 +122,26 @@
         </div>
     </div>
 </footer>
+<script>
 
+    let bars = document.querySelector(".fa-bars")
+    let close = document.querySelector(".fa-close")
+    bars.addEventListener("click", () => {
+        let mobile = document.querySelector(".mobile")
+        mobile.style.display = "block"
+        close.style.display = "block"
+        bars.style.display = "none"
+    })
+    close.addEventListener("click", () => {
+        let mobile = document.querySelector(".mobile")
+        mobile.style.display = "none"
+        close.style.display = "none"
+        bars.style.display = "block"
+    })
+
+
+
+</script>
 
 </body>
 
