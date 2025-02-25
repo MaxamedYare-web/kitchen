@@ -194,10 +194,11 @@ margin-top: 5px;
 
 /* sociali menus design */
 .conatiner{
-    width: 1400px;
+    /* width: ; */
     margin: auto ;
     padding: 20px;
     margin-top: 100px;
+    
 }
 .conatiner h1{
     text-align: center;
